@@ -25,13 +25,13 @@ export default function RootLayout({ children }) {
   const searchParams = useSearchParams();
   return (
 
-    pathname==="/login"?
+    pathname==="/login" || pathname==="/login/signin"?
     
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       <div>
-        <main className="sm:w-2/3 xl:w-4/5 sm:min-h-screen p-5">
-          <div className="bg-gray-800 min-h-screen">
+        <main className="">
+          <div className="bg-gray-800 min-h-screen flex min-h-screen">
           {children}
           </div>
         </main>
